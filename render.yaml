@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: gpt-audio-proxy
+    env: python
+    buildCommand: ""
+    startCommand: "python main.py"
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: ELEVENLABS_API_KEY
+        sync: false
+      - key: VOICE_ID
+        sync: false
