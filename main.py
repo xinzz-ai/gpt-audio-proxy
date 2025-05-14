@@ -24,6 +24,8 @@ def get_gpt_response(prompt):
             "temperature": 0.7
         }
         res = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
+        print("GPT状态码：", res.status_code)
+        print("GPT返回内容：", res.text)
         res.raise_for_status()  # 抛出 HTTP 错误
         return res.json()["choices"][0]["message"]["content"]
     except Exception as e:
