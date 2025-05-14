@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 
 # 环境变量读取方式（推荐安全）
-OPENAI_API_KEY = os.environ.get("sk-proj-0fYh24w4PyMke6vOIt65ty3qGuJJsCObQbcoC08nTy5UnbPtmlMzNjsnTUy1SZC_syRihHo__VT3BlbkFJrCOsgaS6L3Fh1skfmTeva9YDG2YhoLoVBK4DVW0woJ5sEibyQUNS1ygMxq4-_kkYZpY_8Ql1kAsk-proj-0fYh24w4PyMke6vOIt65ty3qGuJJsCObQbcoC08nTy5UnbPtmlMzNjsnTUy1SZC_syRihHo__VT3BlbkFJrCOsgaS6L3Fh1skfmTeva9YDG2YhoLoVBK4DVW0woJ5sEibyQUNS1ygMxq4-_kkYZpY_8Ql1kA")
+OPENAI_API_KEY = os.environ.get("Bearer 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")
 ELEVENLABS_API_KEY = os.environ.get("sk_b41fcfe0dc4bb5e7d7c99efbb3770d97a4edde8af16cddc7")
 VOICE_ID = os.environ.get("Bp4JBv27FA0v7JZ4UXuw")
 
